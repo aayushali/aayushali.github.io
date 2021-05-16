@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --target-color:rgb(25, 161, 20);
+}
+body {
+    background-color: #293f50;
+}
+.container{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 100px;
+   display: flex;
+   width: 70%;
+   align-items: unset;
+   
+}
+.title-name{
+    display: inline-block;
+    flex-grow: 8;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+
+
+}
+.nav-items{
+    flex-grow: 1;
+    align-items: flex-start;
+}
+.nav-items li {
+    display: inline-block;
+    
+}
+.schedule-date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--target-color);
+    margin-bottom: 1rem;
+}
+.navigation{
+    list-style-type: none;
+}
+.navigation li a , .footer-nav li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 10px;
+    text-align: center;
+
+
+}
+.navigation li a:hover{
+    color: rgb(25, 161, 20);
+    border-radius: 5px;
+    transition-duration: 1s;
+    border: 1px solid #fff;
+}
+
+.body-content{
+    margin: 100px auto;
+    text-align: center;
+    width: 70%;  
+}
+
+.body-content .body-text {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--target-color);
+    line-height: 5rem;
+
+}
+.body-content .body-tagline{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.body-content .register-btn{
+    width: 170px;
+    height: 50px;
+    font-size: 1rem;
+    margin-top: 30px;
+    border-radius: 10px;
+    text-align: centers;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #fff;
+}
+
+.register-btn:hover{
+    color: var(--target-color) ;
+    box-shadow: 2px 4px 6px #fff;
+    
+}
+
+.post-items{
+    background-color: rgb(245, 243, 243);
+    margin-top: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.single-box {
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+    box-shadow: 8px 10px 6px rgb(207, 202, 202);
+}
+
+.single-box:hover{
+    transform: scale(1.05,1.05);
+    box-shadow: none;
+   
+
+}
+
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 230px;
+    border-radius: 5%;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center center;
+}
+.single-box:nth-child(1) .img-area{
+    background-image: url('../images/speakers.jpg');
+}
+
+.single-box:nth-child(2) .img-area{
+    background-image: url('../images/schedule.jpg');
+}
+.single-box:nth-child(3) .img-area{
+    background-image: url('../images/venue.jpg');
+}
+.box-caption{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    display: block;
+
+}
+.img-text {
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.single-box-title{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    }
+.single-box-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+footer{
+    height: 80px;
+}
+
+.footer-copyright-text{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: white;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.footer-nav{
+float: right;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+}
+.footer-nav ul li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.footer-nav li a{
+    padding: 2px 2px;
+}
+
+.footer-nav li a:hover{
+    color: var(--target-color);
+}
+
+
+/** Speaker page */
+
+.container .speakers{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: flex;
+    width: 70%;
+    align-items: unset;
+    
+ }
+
+ .speakers-home {
+     height: 250px;
+     margin: 50 0 0 0;
+     background-image: linear-gradient(to right, rgb(154, 228, 154), rgb(253, 253, 176))
+    }
+
+.speakers-home .title , .title-caption{
+    font-family:  'Montserrat', sans-serif;;
+    font-size: 3rem;
+    padding: 40px 0 30px;
+    text-align: center;
+    display: block;
+
+}
+.speakers-home .title-caption {
+    font-size: 1.5rem;
+    padding: 20px 200px 0;
+}
+.speaker-content {
+    background-color: #fff;
+    height: 1500px;
+}
